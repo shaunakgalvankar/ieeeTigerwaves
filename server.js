@@ -1,6 +1,11 @@
 var express=require('express')
 
 var app=express();
+//
+var MongoClient = require('mongodb').MongoClient;
+
+
+
 
 //set the template engine to ejs
 app.set('view engine','ejs');
@@ -16,8 +21,12 @@ app.get('/home',function(req,res){
   res.render('homepage');
 });
 
-app.get('/committee',function(req,res){
+app.get('/home/committee',function(req,res){
   res.render('committee');
+});
+
+app.get('/home/newsletter',function(req,res){
+  res.render('newsletter');
 });
 
 
