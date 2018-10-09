@@ -29,6 +29,9 @@ app.get('/home/newsletter',function(req,res){
   res.render('newsletter');
 });
 
+app.get('/home/mentorship',function(req,res){
+  res.render('mentorship');
+});
 
 //listen on the declared port
 
