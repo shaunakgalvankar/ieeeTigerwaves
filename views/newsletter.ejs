@@ -21,60 +21,25 @@
 	</head>
 
 	<header>
-		<div class="logo" >
-			<!--<div class="brainwave">
-			<img src="images/Logos/footer-logo.png" width="160p" height="40" />
-			</div>-->
-			<div class="ieee_logo">
-				<img src="assets/landingpage/ieeemain.png" width="240p" height="75" />
-			</div>
-			<div class="dj">
-				<img src="images/Logos/DJ.png" width="70" height="70" />
-			</div>
-		</div>
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<ul class="nav navbar-nav">
-					<li >
-						<a href="./index.html">Home</a>
-					</li>
-					<li>
-						<a href="./index.html#2018">Events 2018</a>
-					</li>
-					<li>
-						<a href="./index.html#mentor">Mentorship Program 2018</a>
-					</li>
-					<li>
-						<a href="./index.html#2017">Events 2017</a>
-					</li>
-					<li>
-						<a href="https://medium.com/ieee-brainwaves">Blog</a>
-					</li>
-					<li class="active">
-						<a href="./newsletter.html">Newsletter Archive</a>
-					</li>
-					<li >
-						<a href="./the_team.html">The Team</a>
-					</li>
-
-				</ul>
-			</div>
-		</nav>
-
+		<%include partials/navbar.ejs%>
+		  <div class="jumbotron fluid text-white" style="background: #00429a;" height="70px">
+		    <div class="container">
+		      <h1 style="padding-top:50px">Newsletters</h1>
+		      <p></p>
+		    </div>
+		  </div>
 	</header>
 
 	<body>
 
     <section class="container">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 event-head bg-info">
-  			<h2>
-  				Reports
-  			</h2>
+  			<h2 style="padding:50px">Reports</h2>
   		</div>
   		</section>
 
 		<section>
-			<div class="container">
+			<div class="container" style="padding:20px">
 				<div class="card">
 					<div class="row ">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -95,7 +60,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="container">
+			<div class="container" style="padding:20px">
 				<div class="card">
 					<div class="row ">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -116,7 +81,7 @@
 			</div>
 		</section>
 		<section>
-			<div class="container">
+			<div class="container" style="padding:20px">
 				<div class="card">
 					<div class="row ">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -137,15 +102,15 @@
 			</div>
 		</section>
 
-		<section class="container">
+		<section class="container" style="padding:10px">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 event-head bg-info">
-  			<h2>
+  			<h2 style="padding:50px">
   				Newsletters
   			</h2>
   		</div>
   		</section>
   		<section>
-			<div class="container">
+			<div class="container" >
 				<div class="card">
 					<div class="row ">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -176,8 +141,8 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="container">
+		<section style="padding:10px">
+			<div class="container" style="padding:20px">
 				<div class="card">
 					<div class="row ">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -209,8 +174,8 @@
 		</section>
 
 
-  		<section class="section">
-			<div class="container">
+  		<section class="section" style="padding:20px">
+			<div class="container" style="padding:20px">
 				<div class="card">
 					<div class="row ">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -241,8 +206,8 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="container">
+		<section style="padding:10px">
+			<div class="container" style="padding:10px">
 				<div class="card">
 					<div class="row ">
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
@@ -275,7 +240,7 @@
 
 
 
-  		<section>
+  		<section style="padding:10px">
 			<div class="container">
 				<div class="card">
 					<div class="row ">
@@ -307,7 +272,7 @@
 			</div>
 		</section>
 
-		<section>
+		<section style="padding:10px">
 			<div class="container">
 				<div class="card">
 					<div class="row ">
@@ -340,7 +305,7 @@
 		</section>
 
 
-  			<section>
+  			<section style="padding:10px">
 			<div class="container">
 				<div class="card">
 					<div class="row ">
@@ -373,7 +338,7 @@
 		</section>
 
 
-  		<section>
+  		<section style="padding:10px">
 			<div class="container">
 				<div class="card">
 					<div class="row ">
@@ -411,36 +376,7 @@
 		<!---FOOTER ========================================================================
 		========================================================================
 		--->
-		<section class="footer">
-			<div class="container">
-
-
-				<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 footer-main">
-					<h2>Connect With Us</h2>
-					<ul>
-            <li>
-							<a href="https://www.instagram.com/ieee_djscoe/" >Instagram</a>
-						</li>
-            <li>
-							<a href="https://twitter.com/ieeebrainwaves" >Twitter</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/ieeebrainwaves.dj/" >Facebook</a>
-						</li>
-
-					</ul>
-
-				</div>
-
-			</div>
-
-			<div class="footer-bottom">
-				<p>
-					&copy; 2018-2019 IEEE BrainWaves.
-				</p>
-			</div>
-
-		</section>
+		<%include partials/footer.ejs%>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.11.3.min.js"></script>
 
