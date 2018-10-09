@@ -33,6 +33,15 @@ app.get('/home/mentorship',function(req,res){
   res.render('mentorship');
 });
 
+app.get('/home/wie',function(req,res){
+  res.render('wie');
+});
+
+app.get('/home/iv',function(req,res){
+  res.render('iv');
+});
+
+
 //listen on the declared port
 
 app.listen(3000);
