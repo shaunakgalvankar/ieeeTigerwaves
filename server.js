@@ -1,45 +1,15 @@
-var express=require('express')
-
+var express=require('express');
+var routes=require('./routes/pages');
 var app=express();
 //
 var MongoClient = require('mongodb').MongoClient;
 
-
-
-
 //set the template engine to ejs
 app.set('view engine','ejs');
 
+app.use(routes);
 //express middleware so that we dont have to write a route for every stylsheet linked to an html file.
 app.use('/assets',express.static('assets'));
-
-app.get('/',function(req,res){
-  res.render('landingpage');
-});
-
-app.get('/home',function(req,res){
-  res.render('homepage');
-});
-
-app.get('/home/committee',function(req,res){
-  res.render('committee');
-});
-
-app.get('/home/newsletter',function(req,res){
-  res.render('newsletter');
-});
-
-app.get('/home/mentorship',function(req,res){
-  res.render('mentorship');
-});
-
-app.get('/home/wie',function(req,res){
-  res.render('wie');
-});
-
-app.get('/home/iv',function(req,res){
-  res.render('iv');
-});
 
 
 //listen on the declared port
