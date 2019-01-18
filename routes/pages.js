@@ -30,4 +30,12 @@ router.get('/home/iv',function(req,res){
   res.render('iv');
 });
 
+router.get('/home/projects',function(req,res){
+  res.render('projects');
+});
+
+router.get('/home/workshops',function(req,res){
+  res.render('workshops');
+});
+
 module.exports=router;
